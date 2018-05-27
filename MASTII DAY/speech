@@ -1,0 +1,23 @@
+3 mote :
+
+Ordonnancement,
+Taches,
+Systemes multi-coeurs,
+
+
+c'est defini pour chaque taches Quand et ou sa sera executer
+
+
+objectif : Minimisation du temps d'execution et la gestion efficace des ressourcr (Processeur l'energie)
+
+
+
+
+
+------ 
+Plate-forme ou system multi-coeurs son l'ensemble de processeurs dans une topology specifique. 
+
+pour s'implifier le probleme on va supposer que l'ensemble de processeurs sont un ensemble d'employées
+
+et les taches comme l'ensemble des travaux a faire.
+

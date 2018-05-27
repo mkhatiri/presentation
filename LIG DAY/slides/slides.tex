@@ -1,0 +1,355 @@
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[french]{beamer}
+
+% format de sauvegarde -----------------
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+
+% i18n ---------------------------------
+\usepackage{babel}
+\usepackage{isodate}
+
+% figures ------------------------------
+\graphicspath{{./img/}}
+\usepackage{tikz}
+\usetikzlibrary{fit, mindmap, positioning}
+\definecolor{blendedgreen}{rgb}{0.4,0.7,0.23}
+\definecolor{blendedred}{rgb}{0.7,0.23,0.4}
+\definecolor{blendedblue}{rgb}{0.23,0.4,0.7}
+
+%------------------------------------------------------------------------------+
+% DÉFINITION DU THÈME                                                          |
+%------------------------------------------------------------------------------+
+% thème trouvé sur http://www.cgogolin.de/Computer.html                        |
+%------------------------------------------------------------------------------+
+
+% définition du thème des diapositives -
+\useoutertheme{wuerzburg}
+\useinnertheme[outline]{chamfered}
+\usecolortheme{shark}
+\setbeamertemplate{navigation symbols}{} % désactive les symboles de navigation
+
+%------------------------------------------------------------------------------+
+% PRÉSENTATION                                                                 |
+%------------------------------------------------------------------------------+
+
+% méta informations --------------------
+\title[Journée doctorants LIG -- 2015]{Journée des doctorants du LIG}
+\subtitle{Appréhender l'hétérogénéité à (très) large échelle}
+\author[Raphaël \textsc{Bleuse}]{
+	Raphaël \textsc{Bleuse} {\footnotesize(\texttt{raphael.bleuse@imag.fr})} \\
+	\textit{\footnotesize sous la direction de} \\
+	Grégory \textsc{Mounié} {\footnotesize(\texttt{gregory.mounie@imag.fr})} \\
+	Denis \textsc{Trystram} {\footnotesize(\texttt{denis.trystram@imag.fr})}
+}
+\institute[LIG -- Équipe \textsc{Moais}]{
+	\medskip
+
+	\includegraphics[height=0.2\textheight]{logo_lig}
+	\qquad
+	\includegraphics[height=0.1\textheight]{logo_moais}
+
+	---
+	\medskip
+
+	\qquad
+	\includegraphics[height=0.12\textheight]{logo_cnrs}
+	\qquad
+	\includegraphics[height=0.12\textheight]{logo_dga}
+	\quad ~
+	\includegraphics[height=0.1\textheight]{logo_inria}
+
+	\medskip
+}
+\date{\printdate{2015-03-26}}
+
+% document -----------------------------
+\begin{document}
+
+% Page de garde, résumé & sommaire ---------------------------------------------
+%-------------------------------------------------------------------------------
+
+% SLIDE --------------------------------
+\begin{frame}[plain]
+	\titlepage
+\end{frame}
+% \SLIDE -------------------------------
+
+% Slides -----------------------------------------------------------------------
+%-------------------------------------------------------------------------------
+
+% SLIDE --------------------------------
+\begin{frame}[plain]
+	\hfill
+	\resizebox{0.8\textwidth}{!}{
+		\begin{tikzpicture}[
+				cpu/.style={align=center, label={center:\includegraphics[width=0.05\textwidth]{flaticon/cpu5}}},
+				gpu/.style={align=center, label={center:\includegraphics[width=0.045\textwidth]{flaticon/pci}}},
+				inner/.style={fill=black, rectangle},
+				every fit/.style={inner sep=2em},
+			]
+
+			\node[cpu]                   (cpu00)  {};
+			\node[cpu] [right=of cpu00]  (cpu01)  {};
+			\node[cpu] [right=of cpu01]  (cpu02)  {};
+			\node[cpu] [right=of cpu02]  (cpu03)  {};
+			\node[cpu] [below=of cpu00]  (cpu10)  {};
+			\node[cpu] [right=of cpu10]  (cpu11)  {};
+			\node[cpu] [right=of cpu11]  (cpu12)  {};
+			\node[cpu] [right=of cpu12]  (cpu13)  {};
+			\node[cpu] [below=of cpu10]  (cpu20)  {};
+			\node[cpu] [right=of cpu20]  (cpu21)  {};
+			\node[cpu] [right=of cpu21]  (cpu22)  {};
+			\node[cpu] [right=of cpu22]  (cpu23)  {};
+			\node[cpu] [below=of cpu20]  (cpu30)  {};
+			\node[cpu] [right=of cpu30]  (cpu31)  {};
+			\node[cpu] [right=of cpu31]  (cpu32)  {};
+			\node[cpu] [right=of cpu32]  (cpu33)  {};
+
+			\node      [right=of cpu03]  (empty0) {};
+			\node      [right=of cpu13]  (empty1) {};
+			\node      [right=of cpu23]  (empty2) {};
+			\node      [right=of cpu33]  (empty3) {};
+
+			\node[gpu] [right=of empty0] (gpu00)  {};
+			\node[gpu] [right=of gpu00]  (gpu01)  {};
+			\node[gpu] [right=of empty1] (gpu10)  {};
+			\node[gpu] [right=of gpu10]  (gpu11)  {};
+			\node[gpu] [right=of empty2] (gpu20)  {};
+			\node[gpu] [right=of gpu20]  (gpu21)  {};
+			\node[gpu] [right=of empty3] (gpu30)  {};
+			\node[gpu] [right=of gpu30]  (gpu31)  {};
+
+
+			\node[draw, blendedblue, rectangle, fit=(cpu00) (cpu30) (gpu01) (gpu31)] (intra) {};
+
+			\node[inner] [below left=of intra.south west, anchor=north east] (node00) {};
+			\node[inner] [right=1em of node00]                               (node01) {};
+			\node[inner] [right=1em of node01]                               (node02) {};
+			\node[inner] [right=1em of node02]                               (node03) {};
+			\node[inner] [right=1em of node03]                               (node04) {};
+			\node[inner] [right=1em of node04]                               (node05) {};
+			\node[inner] [right=1em of node05]                               (node06) {};
+			\node[inner] [right=1em of node06]                               (node07) {};
+			\node[inner] [right=1em of node07]                               (node08) {};
+			\node[inner] [right=1em of node08]                               (node09) {};
+			\node[inner] [right=1em of node09]                               (node010) {};
+			\node[inner] [right=1em of node010]                              (node011) {};
+			\node[inner] [right=1em of node011]                              (node012) {};
+			\node[inner] [right=1em of node012]                              (node013) {};
+			\node[inner] [right=1em of node013]                              (node014) {};
+			\node[inner] [right=1em of node014]                              (node015) {};
+			\node[inner] [below=1em of node00]                               (node10) {};
+			\node[inner] [right=1em of node10]                               (node11) {};
+			\node[inner] [right=1em of node11]                               (node12) {};
+			\node[inner] [right=1em of node12]                               (node13) {};
+			\node[inner] [right=1em of node13]                               (node14) {};
+			\node[inner] [right=1em of node14]                               (node15) {};
+			\node[inner] [right=1em of node15]                               (node16) {};
+			\node[inner] [right=1em of node16]                               (node17) {};
+			\node[inner] [right=1em of node17]                               (node18) {};
+			\node[inner] [right=1em of node18]                               (node19) {};
+			\node[inner] [right=1em of node19]                               (node110) {};
+			\node[inner] [right=1em of node110]                              (node111) {};
+			\node[inner] [right=1em of node111]                              (node112) {};
+			\node[inner] [right=1em of node112]                              (node113) {};
+			\node[inner] [right=1em of node113]                              (node114) {};
+			\node[inner] [right=1em of node114]                              (node115) {};
+			\node[inner] [below=1em of node10]                               (node20) {};
+			\node[inner] [right=1em of node20]                               (node21) {};
+			\node[inner] [right=1em of node21]                               (node22) {};
+			\node[inner] [right=1em of node22]                               (node23) {};
+			\node[inner] [right=1em of node23]                               (node24) {};
+			\node[inner] [right=1em of node24]                               (node25) {};
+			\node[inner] [right=1em of node25]                               (node26) {};
+			\node[inner] [right=1em of node26]                               (node27) {};
+			\node[inner] [right=1em of node27]                               (node28) {};
+			\node[inner] [right=1em of node28]                               (node29) {};
+			\node[inner] [right=1em of node29]                               (node210) {};
+			\node[inner] [right=1em of node210]                              (node211) {};
+			\node[inner] [right=1em of node211]                              (node212) {};
+			\node[inner] [right=1em of node212]                              (node213) {};
+			\node[inner] [right=1em of node213]                              (node214) {};
+			\node[inner] [right=1em of node214]                              (node215) {};
+			\node[inner] [below=1em of node20]                               (node30) {};
+			\node[inner] [right=1em of node30]                               (node31) {};
+			\node[inner] [right=1em of node31]                               (node32) {};
+			\node[inner] [right=1em of node32]                               (node33) {};
+			\node[inner] [right=1em of node33]                               (node34) {};
+			\node[inner] [right=1em of node34]                               (node35) {};
+			\node[inner] [right=1em of node35]                               (node36) {};
+			\node[inner] [right=1em of node36]                               (node37) {};
+			\node[inner] [right=1em of node37]                               (node38) {};
+			\node[inner] [right=1em of node38]                               (node39) {};
+			\node[inner] [right=1em of node39]                               (node310) {};
+			\node[inner] [right=1em of node310]                              (node311) {};
+			\node[inner] [right=1em of node311]                              (node312) {};
+			\node[inner] [right=1em of node312]                              (node313) {};
+			\node[inner] [right=1em of node313]                              (node314) {};
+			\node[inner] [right=1em of node314]                              (node315) {};
+			\node[inner] [below=1em of node30]                               (node40) {};
+			\node[inner] [right=1em of node40]                               (node41) {};
+			\node[inner] [right=1em of node41]                               (node42) {};
+			\node[inner] [right=1em of node42]                               (node43) {};
+			\node[inner] [right=1em of node43]                               (node44) {};
+			\node[inner] [right=1em of node44]                               (node45) {};
+			\node[inner] [right=1em of node45]                               (node46) {};
+			\node[inner] [right=1em of node46]                               (node47) {};
+			\node[inner] [right=1em of node47]                               (node48) {};
+			\node[inner] [right=1em of node48]                               (node49) {};
+			\node[inner] [right=1em of node49]                               (node410) {};
+			\node[inner] [right=1em of node410]                              (node411) {};
+			\node[inner] [right=1em of node411]                              (node412) {};
+			\node[inner] [right=1em of node412]                              (node413) {};
+			\node[inner] [right=1em of node413]                              (node414) {};
+			\node[inner] [right=1em of node414]                              (node415) {};
+			\node[inner] [below=1em of node40]                               (node50) {};
+			\node[inner] [right=1em of node50]                               (node51) {};
+			\node[inner] [right=1em of node51]                               (node52) {};
+			\node[inner] [right=1em of node52]                               (node53) {};
+			\node[inner] [right=1em of node53]                               (node54) {};
+			\node[inner] [right=1em of node54]                               (node55) {};
+			\node[inner] [right=1em of node55]                               (node56) {};
+			\node[inner] [right=1em of node56]                               (node57) {};
+			\node[inner] [right=1em of node57]                               (node58) {};
+			\node[inner] [right=1em of node58]                               (node59) {};
+			\node[inner] [right=1em of node59]                               (node510) {};
+			\node[inner] [right=1em of node510]                              (node511) {};
+			\node[inner] [right=1em of node511]                              (node512) {};
+			\node[inner] [right=1em of node512]                              (node513) {};
+			\node[inner] [right=1em of node513]                              (node514) {};
+			\node[inner] [right=1em of node514]                              (node515) {};
+			\node[inner] [below=1em of node50]                               (node60) {};
+			\node[inner] [right=1em of node60]                               (node61) {};
+			\node[inner] [right=1em of node61]                               (node62) {};
+			\node[inner] [right=1em of node62]                               (node63) {};
+			\node[inner] [right=1em of node63]                               (node64) {};
+			\node[inner] [right=1em of node64]                               (node65) {};
+			\node[inner] [right=1em of node65]                               (node66) {};
+			\node[inner] [right=1em of node66]                               (node67) {};
+			\node[inner] [right=1em of node67]                               (node68) {};
+			\node[inner] [right=1em of node68]                               (node69) {};
+			\node[inner] [right=1em of node69]                               (node610) {};
+			\node[inner] [right=1em of node610]                              (node611) {};
+			\node[inner] [right=1em of node611]                              (node612) {};
+			\node[inner] [right=1em of node612]                              (node613) {};
+			\node[inner] [right=1em of node613]                              (node614) {};
+			\node[inner] [right=1em of node614]                              (node615) {};
+			\node[inner] [below=1em of node60]                               (node70) {};
+			\node[inner] [right=1em of node70]                               (node71) {};
+			\node[inner] [right=1em of node71]                               (node72) {};
+			\node[inner] [right=1em of node72]                               (node73) {};
+			\node[inner] [right=1em of node73]                               (node74) {};
+			\node[inner] [right=1em of node74]                               (node75) {};
+			\node[inner] [right=1em of node75]                               (node76) {};
+			\node[inner] [right=1em of node76]                               (node77) {};
+			\node[inner] [right=1em of node77]                               (node78) {};
+			\node[inner] [right=1em of node78]                               (node79) {};
+			\node[inner] [right=1em of node79]                               (node710) {};
+			\node[inner] [right=1em of node710]                              (node711) {};
+			\node[inner] [right=1em of node711]                              (node712) {};
+			\node[inner] [right=1em of node712]                              (node713) {};
+			\node[inner] [right=1em of node713]                              (node714) {};
+			\node[inner] [right=1em of node714]                              (node715) {};
+
+			\draw[blendedblue] (node07.north west) -- (intra.south west);
+			\draw[blendedblue] (node07.north east) -- (intra.south east);
+
+			\node [left=10em of intra.west] {\pgftext{\includegraphics[width=15em]{exascale}}};
+		\end{tikzpicture}
+	}
+\end{frame}
+% \SLIDE -------------------------------
+
+% SLIDE --------------------------------
+\begin{frame}[plain]
+	\centering
+	\resizebox{\textwidth}{!}{
+		\begin{tikzpicture}[node distance=3cm, outer sep=0pt]
+			\begin{scope}[]
+				\node (t1) [circle, minimum size=2cm]              {\pgftext{\includegraphics[width=1.3cm]{flaticon/list64}}};
+				\node (t2) [right of=t1, circle, minimum size=2cm] {\pgftext{\includegraphics[width=1.3cm]{flaticon/list64}}};
+				\node (t3) [right of=t2, circle, minimum size=2cm] {\pgftext{\includegraphics[width=1.3cm]{flaticon/list64}}};
+				\node (t4) [right of=t3, circle, minimum size=2cm] {\pgftext{\includegraphics[width=1.3cm]{flaticon/list64}}};
+				\node (t5) [right of=t4, circle, minimum size=2cm] {\pgftext{\includegraphics[width=1.3cm]{flaticon/list64}}};
+				\node (t6) [right of=t5, circle, minimum size=2cm] {\pgftext{\includegraphics[width=1.3cm]{flaticon/list64}}};
+				\node (t7) [right of=t6, circle, minimum size=2cm] {\pgftext{\includegraphics[width=1.3cm]{flaticon/list64}}};
+				\node (t8) [right of=t7, circle, minimum size=2cm] {\pgftext{\includegraphics[width=1.3cm]{flaticon/list64}}};
+			\end{scope}
+
+			% compute nodes
+			\begin{scope}[xshift=2cm, yshift=-6cm]
+				\node (n1) [circle, minimum size=2cm]                  {\pgftext{\includegraphics[width=1.5cm]{flaticon/cpu5}}};
+				\node (n2) [right of=n1, circle, minimum size=2cm]     {\pgftext{\includegraphics[width=1.5cm]{flaticon/cpu5}}};
+				\node (n3) [right of=n2, circle, minimum size=2cm]     {\pgftext{\includegraphics[width=1.5cm]{flaticon/cpu5}}};
+				\node (n4) [right of=n3, circle, minimum size=2cm]     {\pgftext{\includegraphics[width=1.5cm]{flaticon/cpu5}}};
+
+				\node (n5) [right=3cm of n4, circle, minimum size=2cm] {\pgftext{\includegraphics[width=1.3cm]{flaticon/pci}}};
+				\node (n6) [right of=n5, circle, minimum size=2cm]     {\pgftext{\includegraphics[width=1.3cm]{flaticon/pci}}};
+			\end{scope}
+		\end{tikzpicture}
+	}
+\end{frame}
+% \SLIDE -------------------------------
+
+% SLIDE --------------------------------
+\begin{frame}[plain]
+	\centering
+	\resizebox{\textwidth}{!}{
+		\begin{tikzpicture}[node distance=3cm, outer sep=0pt]
+			\begin{scope}[]
+				\node (t1) [circle, minimum size=2cm, draw]              {\pgftext{\includegraphics[width=1.3cm]{flaticon/list64}}};
+				\node (t2) [right of=t1, circle, minimum size=2cm, draw] {\pgftext{\includegraphics[width=1.3cm]{flaticon/list64}}};
+				\node (t3) [right of=t2, circle, minimum size=2cm, draw] {\pgftext{\includegraphics[width=1.3cm]{flaticon/list64}}};
+				\node (t4) [right of=t3, circle, minimum size=2cm, draw] {\pgftext{\includegraphics[width=1.3cm]{flaticon/list64}}};
+				\node (t5) [right of=t4, circle, minimum size=2cm, draw] {\pgftext{\includegraphics[width=1.3cm]{flaticon/list64}}};
+				\node (t6) [right of=t5, circle, minimum size=2cm, draw] {\pgftext{\includegraphics[width=1.3cm]{flaticon/list64}}};
+				\node (t7) [right of=t6, circle, minimum size=2cm, draw] {\pgftext{\includegraphics[width=1.3cm]{flaticon/list64}}};
+				\node (t8) [right of=t7, circle, minimum size=2cm, draw] {\pgftext{\includegraphics[width=1.3cm]{flaticon/list64}}};
+			\end{scope}
+
+			% compute nodes
+			\begin{scope}[xshift=2cm, yshift=-6cm]
+				\node (n1) [circle, minimum size=2cm, draw]                  {\pgftext{\includegraphics[width=1.5cm]{flaticon/cpu5}}};
+				\node (n2) [right of=n1, circle, minimum size=2cm, draw]     {\pgftext{\includegraphics[width=1.5cm]{flaticon/cpu5}}};
+				\node (n3) [right of=n2, circle, minimum size=2cm, draw]     {\pgftext{\includegraphics[width=1.5cm]{flaticon/cpu5}}};
+				\node (n4) [right of=n3, circle, minimum size=2cm, draw]     {\pgftext{\includegraphics[width=1.5cm]{flaticon/cpu5}}};
+
+				\node (n5) [right=3cm of n4, circle, minimum size=2cm, draw] {\pgftext{\includegraphics[width=1.3cm]{flaticon/pci}}};
+				\node (n6) [right of=n5, circle, minimum size=2cm, draw]     {\pgftext{\includegraphics[width=1.3cm]{flaticon/pci}}};
+			\end{scope}
+
+			% affinity links
+			\begin{scope}[decoration={start radius=1cm, end radius=1cm, amplitude=.5mm, angle=30}]
+				\fill [blendedred, decorate, decoration=circle connection bar] (t1) -- (n3);
+			\end{scope}
+			\begin{scope}[decoration={start radius=1cm, end radius=1cm, amplitude=1mm, angle=30}]
+				\fill [blendedblue, decorate, decoration=circle connection bar]  (t4) -- (n5);
+				\fill [blendedgreen, decorate, decoration=circle connection bar] (t7) -- (n5);
+			\end{scope}
+			\begin{scope}[decoration={start radius=1cm, end radius=1cm, amplitude=2mm, angle=30}]
+				\fill [blendedred, decorate, decoration=circle connection bar]  (t1) -- (n1);
+				\fill [blendedred, decorate, decoration=circle connection bar]  (t1) -- (n2);
+				\fill [blendedblue, decorate, decoration=circle connection bar] (t4) -- (n3);
+			\end{scope}
+			\begin{scope}[decoration={start radius=1cm, end radius=1cm, amplitude=4mm, angle=30}]
+				\fill [blendedblue, decorate, decoration=circle connection bar]  (t4) -- (n4);
+				\fill [blendedgreen, decorate, decoration=circle connection bar] (t7) -- (n6);
+				\fill [blendedgreen, decorate, decoration=circle connection bar] (t8) -- (n6);
+			\end{scope}
+		\end{tikzpicture}
+	}
+\end{frame}
+% \SLIDE -------------------------------
+
+% SLIDE --------------------------------
+{ % keep template changes located to this slide
+% changing the background template allow for a fullscreen picture
+\usebackgroundtemplate{\includegraphics[height=\paperheight, width=\paperwidth]{massively_parallel}}
+\begin{frame}[plain]
+\end{frame}
+}
+% \SLIDE -------------------------------
+\end{document}
