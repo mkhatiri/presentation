@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+    app1:
+        build: app
+    proxy:
+        build: proxy
+        ports:
+            - "8090:80"
+           

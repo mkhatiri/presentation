@@ -1,19 +1,19 @@
 \beamer@endinputifotherversion {3.36pt}
 \select@language {french}
-\beamer@sectionintoc {1}{Les architectures Monolithique}{3}{0}{1}
+\beamer@sectionintoc {1}{Les architectures Logiciel}{3}{0}{1}
 \beamer@subsectionintoc {1}{1}{Les architectures Monolithique VS les architectures des Microservices}{3}{0}{1}
-\beamer@sectionintoc {2}{Les architectures des Microservices}{5}{0}{2}
-\beamer@subsectionintoc {2}{2}{Isolation des Microservices}{6}{0}{2}
-\beamer@subsectionintoc {2}{4}{Les outils}{11}{0}{2}
-\beamer@sectionintoc {3}{Exemple de HELLO WORLD}{13}{0}{3}
-\beamer@sectionintoc {4}{Avantage des Microservices }{14}{0}{4}
-\beamer@subsectionintoc {4}{1}{Mises \IeC {\`a} jour}{14}{0}{4}
-\beamer@subsectionintoc {4}{2}{Bugs d\'ecentralis\'ee}{17}{0}{4}
-\beamer@subsectionintoc {4}{3}{Consommation de ressources et Scalabilit\`e}{20}{0}{4}
-\beamer@sectionintoc {5}{Inconv\`enients (Limites) des architectures Microservices.}{23}{0}{5}
-\beamer@subsectionintoc {5}{1}{Inconv\`enients (Limites) des architectures Microservices}{23}{0}{5}
-\beamer@sectionintoc {6}{Qui utilisent les microservices ?}{25}{0}{6}
-\beamer@subsectionintoc {6}{1}{Qui utilisent les microservices ?}{25}{0}{6}
-\beamer@sectionintoc {7}{Conclusion}{27}{0}{7}
-\beamer@subsectionintoc {7}{1}{D\IeC {\'e}velopper des architectures microservice ?}{27}{0}{7}
-\beamer@subsectionintoc {7}{2}{Conclusion}{29}{0}{7}
+\beamer@sectionintoc {2}{Architectures Microservices}{5}{0}{2}
+\beamer@subsectionintoc {2}{2}{Isolation des Microservices}{7}{0}{2}
+\beamer@subsectionintoc {2}{4}{Les outils}{12}{0}{2}
+\beamer@sectionintoc {3}{Exemple de HELLO WORLD}{14}{0}{3}
+\beamer@sectionintoc {4}{Avantage des Microservices }{15}{0}{4}
+\beamer@subsectionintoc {4}{1}{Mises \IeC {\`a} jour}{15}{0}{4}
+\beamer@subsectionintoc {4}{2}{Bugs d\'ecentralis\'ee}{18}{0}{4}
+\beamer@subsectionintoc {4}{3}{Consommation de ressources et Scalabilit\`e}{21}{0}{4}
+\beamer@sectionintoc {5}{Inconv\`enients (Limites) des architectures Microservices.}{24}{0}{5}
+\beamer@subsectionintoc {5}{1}{Inconv\`enients (Limites) des architectures Microservices}{24}{0}{5}
+\beamer@sectionintoc {6}{Qui utilisent les microservices ?}{26}{0}{6}
+\beamer@subsectionintoc {6}{1}{Qui utilisent les microservices ?}{26}{0}{6}
+\beamer@sectionintoc {7}{Conclusion}{28}{0}{7}
+\beamer@subsectionintoc {7}{1}{D\IeC {\'e}velopper des architectures microservice ?}{28}{0}{7}
+\beamer@subsectionintoc {7}{2}{Conclusion}{30}{0}{7}

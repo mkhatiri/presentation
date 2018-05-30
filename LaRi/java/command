@@ -1,0 +1,16 @@
+root@376a0f0180a3:/# ^C
+root@376a0f0180a3:/# ^C
+root@376a0f0180a3:/# ^C
+root@376a0f0180a3:/# ^C
+root@376a0f0180a3:/# ^C
+root@376a0f0180a3:/# ^C
+root@376a0f0180a3:/# ^C
+root@376a0f0180a3:/# ^C
+root@376a0f0180a3:/# ^C
+root@376a0f0180a3:/# ^C
+root@376a0f0180a3:/# ^C
+root@376a0f0180a3:/# ^C
+root@376a0f0180a3:/# ^C
+root@376a0f0180a3:/# ^C
+root@376a0f0180a3:/# docker build -t imagetest .
+docker run -it imagetest

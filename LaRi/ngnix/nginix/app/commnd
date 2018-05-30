@@ -1,0 +1,3 @@
+build -t nginix .
+docker run -it nginx:alpine
+docker run -d nginx

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.4.17)  28 MAY 2018 02:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.4.17)  28 MAY 2018 14:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1338,134 +1338,136 @@ LaTeX Font Warning: Font shape `T1/cmss/m/sc' undefined
 File: Microservices.png Graphic file (type png)
 
 <use Microservices.png>
-Package pdftex.def Info: Microservices.png used on input line 236.
-(pdftex.def)             Requested size: 136.91603pt x 103.34856pt.
+Package pdftex.def Info: Microservices.png used on input line 223.
+(pdftex.def)             Requested size: 205.37926pt x 155.02673pt.
  [5
 
- <./Microservices.png>] (./presentation.toc) [6
+ <./Microservices.png>] [6
 
-]
+] (./presentation.toc)
 [7
 
-] <VM.png, id=356, 438.63875pt x 418.56375pt>
+] [8
+
+] <VM.png, id=382, 438.63875pt x 418.56375pt>
 File: VM.png Graphic file (type png)
  <use VM.png>
-Package pdftex.def Info: VM.png used on input line 283.
+Package pdftex.def Info: VM.png used on input line 294.
 (pdftex.def)             Requested size: 99.57964pt x 85.35266pt.
 
-<Conteneures.png, id=357, 577.15625pt x 553.06625pt>
+<Conteneures.png, id=383, 577.15625pt x 553.06625pt>
 File: Conteneures.png Graphic file (type png)
  <use Conteneures.png>
-Package pdftex.def Info: Conteneures.png used on input line 283.
+Package pdftex.def Info: Conteneures.png used on input line 294.
 (pdftex.def)             Requested size: 99.57716pt x 113.80971pt.
 
-[8
+[9
 
- <./VM.png> <./Conteneures.png>] [9
+ <./VM.png> <./Conteneures.png>] [10
 
 ]
-<performances.png, id=413, 1037.8775pt x 436.63126pt>
+<performances.png, id=439, 1037.8775pt x 436.63126pt>
 File: performances.png Graphic file (type png)
  <use performances.png>
-Package pdftex.def Info: performances.png used on input line 318.
+Package pdftex.def Info: performances.png used on input line 326.
 (pdftex.def)             Requested size: 342.2953pt x 144.00214pt.
 
-[10
+[11
 
- <./performances.png>] (./presentation.toc) [11
+ <./performances.png>] (./presentation.toc) [12
 
-] [12
+] [13
 
 ]
-<hello.png, id=509, 978.65625pt x 617.30624pt>
+<hello.png, id=536, 978.65625pt x 617.30624pt>
 File: hello.png Graphic file (type png)
  <use hello.png>
-Package pdftex.def Info: hello.png used on input line 341.
+Package pdftex.def Info: hello.png used on input line 349.
 (pdftex.def)             Requested size: 308.06367pt x 194.32062pt.
- [13
+ [14
 
- <./hello.png>] (./presentation.toc) [14
+ <./hello.png>] (./presentation.toc) [15
 
-] <MAJmono.png, id=581, 579.16376pt x 454.69875pt>
+] <MAJmono.png, id=608, 579.16376pt x 454.69875pt>
 File: MAJmono.png Graphic file (type png)
 
 <use MAJmono.png>
-Package pdftex.def Info: MAJmono.png used on input line 377.
+Package pdftex.def Info: MAJmono.png used on input line 385.
 (pdftex.def)             Requested size: 150.61075pt x 118.2397pt.
- <MAJMicroservices.png, id=584, 595.22375pt x 464.73625pt>
+ <MAJMicroservices.png, id=611, 595.22375pt x 464.73625pt>
 File: MAJMicroservices.png Graphic file (type png)
 
 <use MAJMicroservices.png>
-Package pdftex.def Info: MAJMicroservices.png used on input line 377.
+Package pdftex.def Info: MAJMicroservices.png used on input line 385.
 (pdftex.def)             Requested size: 102.68962pt x 80.17418pt.
- [15
+ [16
 
  <./MAJmono.png> <./MAJMicroservices.png>]
 File: MAJmono.png Graphic file (type png)
 
 <use MAJmono.png>
-Package pdftex.def Info: MAJmono.png used on input line 377.
+Package pdftex.def Info: MAJmono.png used on input line 385.
 (pdftex.def)             Requested size: 150.61075pt x 118.2397pt.
 File: MAJMicroservices.png Graphic file (type png)
  <use MAJMicroservices.png>
-Package pdftex.def Info: MAJMicroservices.png used on input line 377.
+Package pdftex.def Info: MAJMicroservices.png used on input line 385.
 (pdftex.def)             Requested size: 102.68962pt x 80.17418pt.
- [16
+ [17
 
-] (./presentation.toc) [17
+] (./presentation.toc) [18
 
 ]
-<BUGmono.png, id=680, 563.10374pt x 413.545pt>
+<BUGmono.png, id=707, 563.10374pt x 413.545pt>
 File: BUGmono.png Graphic file (type png)
  <use BUGmono.png>
-Package pdftex.def Info: BUGmono.png used on input line 406.
+Package pdftex.def Info: BUGmono.png used on input line 414.
 (pdftex.def)             Requested size: 136.91862pt x 100.55272pt.
 
-<BUGMicroservices.png, id=681, 592.2125pt x 465.74pt>
+<BUGMicroservices.png, id=708, 592.2125pt x 465.74pt>
 File: BUGMicroservices.png Graphic file (type png)
 
 <use BUGMicroservices.png>
-Package pdftex.def Info: BUGMicroservices.png used on input line 406.
+Package pdftex.def Info: BUGMicroservices.png used on input line 414.
 (pdftex.def)             Requested size: 136.91862pt x 107.67937pt.
- [18
+ [19
 
  <./BUGmono.png> <./BUGMicroservices.png>]
 File: BUGmono.png Graphic file (type png)
 
 <use BUGmono.png>
-Package pdftex.def Info: BUGmono.png used on input line 406.
+Package pdftex.def Info: BUGmono.png used on input line 414.
 (pdftex.def)             Requested size: 136.91862pt x 100.55272pt.
 File: BUGMicroservices.png Graphic file (type png)
  <use BUGMicroservices.png>
-Package pdftex.def Info: BUGMicroservices.png used on input line 406.
+Package pdftex.def Info: BUGMicroservices.png used on input line 414.
 (pdftex.def)             Requested size: 136.91862pt x 107.67937pt.
- [19
+ [20
 
-] (./presentation.toc) [20
-
-]
-[21
-
-] [22
-
-] (./presentation.toc) [23
-
-] [24
-
-] (./presentation.toc) [25
-
-] [26
+] (./presentation.toc) [21
 
 ]
-(./presentation.toc) [27
+[22
 
-] [28
+] [23
 
-] (./presentation.toc) [29
+] (./presentation.toc) [24
 
-] [30
+] [25
+
+] (./presentation.toc) [26
+
+] [27
+
+]
+(./presentation.toc) [28
+
+] [29
+
+] (./presentation.toc) [30
 
 ] [31
+
+] [32
 
 ]
 \tf@nav=\write6
@@ -1477,14 +1479,14 @@ Package pdftex.def Info: BUGMicroservices.png used on input line 406.
 \tf@snm=\write8
 \openout8 = `presentation.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 496.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 496.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 508.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 508.
 
 (./presentation.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 496.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 496.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 508.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 508.
 Package rerunfilecheck Info: File `presentation.out' has not changed.
-(rerunfilecheck)             Checksum: E30CD9F7751355FD5BBF84540606AC8E;1307.
+(rerunfilecheck)             Checksum: 070B26B4B1F019510A8F25D646B25C0A;1295.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -1493,28 +1495,28 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 496.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 508.
  ) 
 Here is how much of TeX's memory you used:
- 19709 strings out of 493910
- 368621 string characters out of 6156112
- 440664 words of memory out of 5000000
- 22602 multiletter control sequences out of 15000+600000
+ 19689 strings out of 493910
+ 367796 string characters out of 6156112
+ 440665 words of memory out of 5000000
+ 22580 multiletter control sequences out of 15000+600000
  18035 words of font info for 50 fonts, out of 8000000 for 9000
  600 hyphenation exceptions out of 8191
- 56i,16n,65p,392b,869s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,16n,65p,392b,821s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/khatiri/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecsx1000.600pk> </home
-/khatiri/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecsx1095.600pk> </home/khatiri/
-.texmf-var/fonts/pk/ljfour/jknappen/ec/ecss0900.600pk> </home/khatiri/.texmf-va
+/khatiri/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecss0900.600pk> </home/khatiri/
+.texmf-var/fonts/pk/ljfour/jknappen/ec/ecsx1095.600pk> </home/khatiri/.texmf-va
 r/fonts/pk/ljfour/jknappen/ec/ecss1000.600pk> </home/khatiri/.texmf-var/fonts/p
 k/ljfour/jknappen/ec/ecss0600.600pk> </home/khatiri/.texmf-var/fonts/pk/ljfour/
 jknappen/ec/ecss0800.600pk> </home/khatiri/.texmf-var/fonts/pk/ljfour/jknappen/
 ec/ecss1095.600pk> </home/khatiri/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecss14
 40.600pk>
-Output written on presentation.pdf (31 pages, 582867 bytes).
+Output written on presentation.pdf (32 pages, 584892 bytes).
 PDF statistics:
- 1493 PDF objects out of 1728 (max. 8388607)
- 1108 compressed objects within 12 object streams
- 82 named destinations out of 1000 (max. 500000)
+ 1524 PDF objects out of 1728 (max. 8388607)
+ 1136 compressed objects within 12 object streams
+ 84 named destinations out of 1000 (max. 500000)
  289 words of extra memory for PDF output out of 10000 (max. 10000000)
 
